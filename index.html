@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website-Vip</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-queries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="page-container">
+        <header>
+            <div class="header-container">
+                <img src="images/logo.png" alt="Travelo" title="Travelo" class="header-logo">
+                <nav>
+                    <ul id="menu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Destination</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="icons">
+                    <a href="#"><i class="fa fa-search search-icon"></i></a>
+                    <button class="burger-menu" onclick="ShowMenu()"><i class="fa fa-bars"></i></button>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="banner-contents">
+                <div class="banner-contents-text">
+                    <h1 class="banner-title">Australia</h1>
+                    <p class="banner-p-text">Pixel perfect design with awesome contents</p>
+                    <a href="#" class="btn btn-blue">Explore Now</a>
+                </div>
+            </div>
+            <div class="search-boxes">
+                <h3 class="search-boxes-title">Where you want to go?</h3>
+                <form action="#">
+                    <input type="text" placeholder="Where to go">
+                    <input type="text" placeholder="Where to go">
+                    <input type="text" placeholder="Where to go">
+                    <button type="submit" class="btn btn-red">Search</button>
+                </form>
+            </div>
+            <section class="popular-destination">
+                <div class="popular-texts">
+                    <h1 class="popular-title">Popular Destination</h1>
+                    <p class="p-text">Suffered alteration in some form, by injected humour or good day randomised
+                        booth
+                        anim 8-bit hella wolf moon beard words</p>
+                </div>
+                <div class="locations">
+                    <article class="location america">
+                        <div class="location-text">
+                            <h3 class="location-name">America</h3>
+                            <a href="#" class="location-text-a">07 Places</a>
+                        </div>
+                    </article>
+                    <article class="location brazil">
+                        <div class="location-text">
+                            <h3 class="location-name">Brazil</h3>
+                            <a href="#" class="location-text-a">07 Places</a>
+                        </div>
+                    </article>
+                    <article class="location italy">
+                        <div class="location-text">
+                            <h3 class="location-name">Italy</h3>
+                            <a href="#" class="location-text-a">07 Places</a>
+                        </div>
+                    </article>
+                    <article class="location maldives">
+                        <div class="location-text">
+                            <h3 class="location-name">Maldives</h3>
+                            <a href="#" class="location-text-a">07 Places</a>
+                        </div>
+                    </article>
+                    <article class="location maldives2">
+                        <div class="location-text">
+                            <h3 class="location-name">Maldives</h3>
+                            <a href="#" class="location-text-a">07 Places</a>
+                        </div>
+                    </article>
+                    <article class="location nepal">
+                        <div class="location-text">
+                            <h3 class="location-name">Nepal</h3>
+                            <a href="#" class="location-text-a">07 Places</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <div class="subscribe-section">
+                <div class="subscribe-section-text">
+                    <h2 class="subscribe-section-tile">Subscribe Our Newsletter</h2>
+                    <p class="subscribe-section-p">Subscribe newsletter to get offers and about new places to discover.
+                    </p>
+                </div>
+                <form action="#">
+                    <input type="email" placeholder="Your email">
+                    <button type="submit" class="btn btn-red btn-red-subscribe">Subscribe</button>
+                </form>
+            </div>
+            <div class="vidoe-watching">
+                <div class="vidoe-watching-content">
+                    <h1>Enjoy Video</h1>
+                    <a href="#"><i class="fa fa-play vidoe-icon"></i></a>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <img src="images/footer_logo.png" alt="Travelo" title="Travelo">
+                    <ul>
+                        <li>5th flora, 700/D kings road, green</li>
+                        <li>lane New York-1782</li>
+                        <li>+10 367 826 2567</li>
+                        <li>contact@carpenter.com</li>
+                    </ul>
+                </div>
+                <div class="footer-popular-destination">
+                    <h3>Popular destination</h3>
+                    <nav class="footer-popular-destination-lists">
+                        <ul>
+                            <li><a class="footer-a" href="#">Switzerland </a></li>
+                            <li><a class="footer-a" href="#">Franch</a></li>
+                            <li><a class="footer-a" href="#">India</a></li>
+                            <li><a class="footer-a" href="#">America</a></li>
+                        </ul>
+                        <ul>
+                            <li><a class="footer-a" href="#">Canada</a></li>
+                            <li><a class="footer-a" href="#">Indonesia</a></li>
+                            <li><a class="footer-a" href="#">Italy</a></li>
+                            <li><a class="footer-a" href="#">England</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            function ShowMenu() {
+                var menu = document.getElementById('menu')
+                menu.classList.toggle('show-menu');
+            } 
+        </script>
+    </div>
+</body>
+
+</html>

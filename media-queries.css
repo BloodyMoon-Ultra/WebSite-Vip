@@ -1,0 +1,191 @@
+@media (max-width: 410px){
+    .banner-contents{
+        height: 78vw !important;
+    }
+    .locations{
+        width: 96%;
+    }
+}
+
+@media (max-width: 575.98px) { 
+    .search-icon,
+    .burger-menu{
+        padding: 15px !important;
+    }
+    .header-logo{
+        width: 100px !important;
+    }
+    #menu{
+        margin-top: 23.2px !important;
+        width: 150px !important;
+        
+    }
+    #menu li{
+        padding: 10px !important;
+    }
+    #menu li a{
+        font-size: 15px;
+    }
+    input[type='text']{
+        width: 280px !important;
+        height: 40px;
+    }
+    .search-boxes h3{
+        font-size: 14px !important;
+    }
+    .banner-title{
+        font-size: 50px;
+    }
+    .banner-p-text{
+        font-size: 13px;
+    }
+    .btn-blue{
+        padding: 10px;
+        font-size: 12px;
+        margin-top: 20px;
+    }
+    input[type='email']{
+        width: 300px;
+        height: 40px;
+    }
+    .footer-container{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    .banner-contents{
+        height: 63vw;
+    }
+    .vidoe-watching-content h1{
+        font-size: 54px;
+    }
+}    
+
+@media (max-width: 767.98px) { 
+    .locations{
+        display: flex;
+        flex-direction: column;
+    }
+    .search-boxes input[type='text']{
+        width: 410px;
+    }
+    .search-boxes-title{
+        font-size: 16px;
+    }
+} 
+
+
+@media (max-width: 991.98px) { 
+    #menu{
+        display: flex;
+        flex-direction: column;
+        opacity: 0;
+        transform: translateY(-10px);
+        z-index: 9999;
+        position: absolute;
+        right: 0;
+        width: 300px;
+        margin-top: 33px;
+        transition: opacity 0.35s ease-in-out, transform 0.35s ease-in-out;
+    }
+    #menu li{ 
+        background: linear-gradient(90deg, rgba(47, 17, 54, 1.000) 0.000%, rgba(47, 17, 54, 1.000) 7.692%, rgba(52, 18, 52, 1.000) 7.692%, rgba(52, 18, 52, 1.000) 15.385%, rgba(58, 22, 52, 1.000) 15.385%, rgba(58, 22, 52, 1.000) 23.077%, rgba(66, 28, 56, 1.000) 23.077%, rgba(66, 28, 56, 1.000) 30.769%, rgba(74, 35, 62, 1.000) 30.769%, rgba(74, 35, 62, 1.000) 38.462%, rgba(83, 45, 70, 1.000) 38.462%, rgba(83, 45, 70, 1.000) 46.154%, rgba(91, 55, 81, 1.000) 46.154%, rgba(91, 55, 81, 1.000) 53.846%, rgba(99, 67, 93, 1.000) 53.846%, rgba(99, 67, 93, 1.000) 61.538%, rgba(105, 80, 107, 1.000) 61.538%, rgba(105, 80, 107, 1.000) 69.231%, rgba(110, 92, 122, 1.000) 69.231%, rgba(110, 92, 122, 1.000) 76.923%, rgba(112, 104, 138, 1.000) 76.923%, rgba(112, 104, 138, 1.000) 84.615%, rgba(112, 116, 153, 1.000) 84.615%, rgba(112, 116, 153, 1.000) 92.308%, rgba(110, 126, 169, 1.000) 92.308% 100.000%);
+        text-align: center;
+        border-bottom: 1px solid rgb(0, 0, 0);
+        width: 100%;
+    }
+    #menu li:last-of-type{
+        border-bottom: none;
+    }
+    #menu a{
+        color: #fff;
+    }
+    #menu.show-menu{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .search-icon{
+        padding: 25px 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0 !important;
+    }
+    .burger-menu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .icons{
+        display: flex;
+    }
+    .header-container{
+        justify-content: space-between !important;
+    }
+    .header-logo{
+        width: 200px;
+    }
+    .p-text{
+        margin: 0 20px;
+    }
+    
+}
+
+
+@media (max-width: 1199.98px) { 
+    .search-boxes form{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+    input[type='text']{
+        width: 700px;
+    }
+    .subscribe-section{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 150px 0;
+    }
+    .subscribe-section form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .locations{
+        grid-template-areas: 
+        'america brazil'
+        'italy maldives'
+        'maldives2 nepal';
+    }
+    .btn-red{
+        padding: 10px 30px !important;
+    }
+
+}
+@media (min-width: 1582px){
+    .locations{
+        grid-template-areas: 
+        'america brazil italy maldives'
+        '.  maldives2 nepal .';
+    }
+    input[type='text']{
+        width: 450px;
+    }
+    input[type='email']{
+        width: 700px;
+    }
+}
+@media (min-width: 1978px) {
+    .locations{
+        display: grid;
+        grid-template-areas: 
+        'america brazil italy maldives maldives2'
+        '. . nepal . .';
+    }
+    .subscribe-section{
+        justify-content: center;
+    }
+}

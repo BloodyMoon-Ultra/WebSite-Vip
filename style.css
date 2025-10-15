@@ -1,0 +1,398 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'NothingYouCouldDo';
+    src: url('NothingYouCouldDo-Regular.ttf');
+}
+@font-face {
+    font-family: 'Rubik';
+    src: url('Rubik-VariableFont_wght.ttf');
+}
+html,body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+body{
+    background-color: #fff;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+a:not(.location-text-a):not(.footer-a){
+    color: #040e27;
+    transition: color 0.15s ease-in-out;
+}
+a:not(.location-text-a):not(.footer-a):hover{
+     color: #ff4a52;
+}
+.btn{
+    color: white !important;
+    font-family: 'Rubik','sans-serif';
+    font-size: 2vw;
+    border-radius: 8px;
+    transition: 0.4s background-color ease,0.33s transform !important;
+}
+.btn:hover{
+    transform: scale(0.98);
+}
+.btn-blue{
+    background-color: #1EC6B6;
+    padding: 1.2vw 1.5vw;
+}
+.btn-blue:hover{
+    background-color: #FF4A52;
+        
+}
+.btn-blue:active,.btn-red:active{
+    transform: translateY(-7px);
+}
+.btn-red{
+    background-color: #FF4A52;
+    font-size: 16px;
+    padding: 5px 30px;
+    
+}
+.btn-red:hover{
+    background-color: #1EC6B6;
+}
+img{
+    cursor: pointer;
+}
+#menu{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    min-width: 180px;
+}
+#menu li{
+    padding: 15px 20px;
+}
+#menu li a{
+    font-size: 19px;
+}
+.icons > a i{
+    padding: 35px;
+    color: #fff;
+    margin-top: -7.7px;
+    border-radius: 5px;
+    background: linear-gradient(317deg,rgb(138, 22, 177) 0%, rgb(163, 38, 204) 23%, rgba(255, 74, 82, 1) 100%);;
+}
+.burger-menu{
+    display: none;
+    padding: 25px 40px;
+    background: radial-gradient(circle,rgba(224, 144, 177, 1) 0%, rgba(68, 146, 235, 1) 100%);
+    color: #fff;
+    
+}
+
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.banner-contents{
+    margin: 0;
+    padding: 0;
+    background-image: url('images/banner2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 50vw;
+
+}
+.banner-contents-text{
+    display: flex;
+    flex-direction: column;
+    height: 45vw;
+    align-items: center;
+    justify-content: space-around;
+}
+.banner-title{
+    font-family: 'NothingYouCouldDo','cursive';
+    font-weight: bold;
+    font-size: 8vw;
+    color: #f55f5f;
+}
+.banner-p-text{
+    font-size: 2.5vw;
+    color: #fff;
+}
+.search-boxes form{
+    display: flex;
+}
+input{
+    transition: 0.3s transform ease-in-out;
+}
+input:hover{
+    transform: scale(0.99);
+}
+input[type='text']{
+    border: 1px solid #363e52;
+    width: 300px;
+    height: 45px;
+    margin: 0 9px;
+    border-radius: 7px;
+    color: #d6d4d4;
+    background-color: transparent;
+}
+input:focus{
+    outline: none;
+}
+button{
+    border: none;
+    cursor: pointer;
+}
+.search-boxes{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center !important;
+    padding: 30px 0;
+    background-color: #040e27;
+    gap: 20px;
+}
+.search-boxes h3{
+    color: #fff !important;
+    font-weight: 500;
+    margin: 0;
+}
+.popular-texts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.popular-title{
+    color: #040E27;
+    font-weight: 400;
+}
+.p-text{
+    color: #6b7177;
+    font-size: 15px;
+}
+.popular-destination{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin-top: 80px;
+}
+.america{
+    background-image: url('images/3.png');
+    grid-area: america;
+}
+.brazil{
+    background-image: url('images/2.png');
+    grid-area: brazil;
+}
+.italy{
+    background-image: url('images/1.png');
+    grid-area: italy;
+}
+.maldives{
+    background-image: url('images/6.png');
+    grid-area: maldives;
+}
+.maldives2{
+    background-image: url('images/5.png');
+    grid-area: maldives2;
+}
+.nepal{
+    background-image: url('images/4.png');
+    grid-area: nepal;
+}
+.locations{ 
+    display: grid;
+    grid-template-areas: 
+    'america brazil italy'
+    'maldives maldives2 nepal';
+    gap: 20px;
+}
+.location{
+    display: flex;
+    align-items: flex-end;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.37);
+    background-blend-mode: multiply;
+    border-radius: 8px;
+    min-height: 270px;
+    aspect-ratio: 362 / 270 ;
+    transition: transform 0.25s ease-in-out;
+    cursor: pointer;
+}
+.location:hover{
+    transform: translateY(-10px);
+}
+.location-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    margin-left: 30px;
+    margin-bottom: 25px;
+}
+.location-name{
+    margin: 0 0 auto 0;
+    font-weight: 500;
+    font-size: 23px;
+    color: #fff;
+    transition: color 0.25s ease-in-out;
+}
+.location-text-a{
+    color: #fff;
+    background-color: #1EC6B6;
+    padding: 7px 12px;
+    font-size: 12px;
+    border-radius: 30px;
+    transition: background-color 0.25s ease-in-out;
+}
+.location:hover .location-name{
+    color: #ff4a52;
+}
+.location:hover .location-text-a{
+    background-color: #FF4A52;
+}
+.subscribe-section{
+    background-image: url('images/newsletter.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(60, 73, 93,1);
+    background-blend-mode: multiply;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    height: 220px;
+    margin-top: 20px;
+    
+}
+.subscribe-section-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.subscribe-section-tile{
+    color: #fff;
+    font-weight: 500;
+    margin: 0;
+    font-size: 27px;
+}
+.subscribe-section-p{
+    color: #959fa8;
+    font-size: 15px;
+    margin-left: 20px;
+}
+.btn-red-subscribe{
+    padding: 18px 25px;
+    font-size: 15px;
+}
+input[type='email']{
+    border-radius: 7px;
+    width: 450px;
+    height: 50px;
+    border: none;
+}
+input[type='email']:hover{
+    transform: scale(0.992) !important;
+}
+.vidoe-watching{
+    background-image: url('images/video.png');
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.25);
+    background-blend-mode: multiply;
+    background-size: 100% 100%;
+    background-position: center center;
+    padding: 130px 0;
+    margin: 15px 0;
+    width: 100%;
+}
+.vidoe-watching-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.vidoe-watching-content h1{
+    font-family: 'NothingYouCouldDo';
+    font-weight: bold;
+    font-size: 6.5vw;
+    color: #e74b0d;
+}
+.vidoe-icon{
+    color: #fff;
+    padding: 35px;
+    background-color: #1EC6B6;
+    border-radius: 50%;
+    transition: 0.4s background-color ease;
+}
+.vidoe-icon:hover{
+    background-color: #ff4a52;
+}
+.footer-container{
+    background-color: #040e27;
+    padding: 40px 0 0 0;
+}
+.footer-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-logo img{
+    width: 200px;
+    height: auto;
+}
+.footer-logo ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+.footer-logo li{
+    color: #959fa8;
+    cursor: pointer;
+    padding: 3px 0;
+    font-size: 16px;
+}
+.footer-popular-destination{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footer-popular-destination h3{
+    color: #fff;
+    font-weight: 500;
+    margin: 0;
+    font-size: 21px;
+    
+}
+
+.footer-popular-destination-lists{
+    display: flex;
+    gap: 35px;
+}
+.footer-popular-destination ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin-top: 3px;
+}
+.footer-popular-destination li{
+    padding: 8px 0;
+}
+.footer-popular-destination a{
+    color: #b4bfc9;
+    font-size: 15px;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-evenly;
+}
